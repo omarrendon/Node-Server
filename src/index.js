@@ -12,6 +12,7 @@ app.use(express.urlencoded({extended: false}));
 
 //Routes
 app.use(require('./routes/user'));
+app.use(require('./routes/movies'));
 
 //Server port
 app.listen(app.get('port'), () => {
